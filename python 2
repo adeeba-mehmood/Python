@@ -1,0 +1,30 @@
+🔹 Arrays & Lists
+1️⃣ Arrays (using list as simple array)
+arr = [1, 2, 3, 4]
+print(arr[0])   # Access first element
+arr.append(5)   # Add element
+arr.remove(2)   # Remove element
+print(arr)
+
+2️⃣ Lists & Properties
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))  # length
+print("banana" in fruits)  # True
+
+3️⃣ List Functions
+numbers = [10, 20, 30]
+numbers.append(40)
+numbers.insert(1, 15)
+numbers.pop()  # removes last
+numbers.sort()
+print(numbers)
+
+4️⃣ Loops in Lists
+for fruit in fruits:
+    print(fruit)
+
+i = 0
+while i < len(fruits):
+    print(fruits[i])
+    i += 1
+
