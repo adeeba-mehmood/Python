@@ -1,0 +1,24 @@
+Question 1: “Write a Python program that randomly suggests an activity from a given list of options.”
+#program:
+import random
+options=["watch a movie","practise python","go for a walk","take a nap"]
+print("Ai suggest:",
+      random.choice(options))
+
+Question 2:"Write a Python program that acts as a simple medical diagnosis system. The program should ask the user about symptoms
+such as fever, cough, and fatigue, and then display a possible health condition based on the user’s responses."
+program:
+def medical_diagnosis():
+    print("Welcome to the diagnostic system")
+
+    fever = input("Do you have a fever? (yes/no): ").lower()
+    cough = input("Do you have a cough? (yes/no): ").lower()
+    fatigue = input("Do you feel fatigue? (yes/no): ").lower()
+
+    if fever == "yes" and cough == "yes":
+        print("Possible flu or COVID-19")
+    elif fatigue == "yes":
+        print("Possible stress or tiredness")
+    else:
+        print("You seem to be fine")
+medical_diagnosis()
