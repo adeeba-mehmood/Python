@@ -1,0 +1,33 @@
+-> write a program to plot the following charts:
+
+Question no 1: write a python program to plot bar chart to represent marks of a student in all subjects
+program:
+import matplotlib.pyplot as plt
+subjects = ["Math", "Science", "English", "History", "Computer"]
+marks = [85, 90, 78, 88, 95]
+plt.bar(subjects, marks, color='skyblue')
+plt.title("Student Marks in Different Subjects")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+plt.show()
+
+Question no 2: write a program to plot a scatter graph showing temperature throughout the week
+program:
+import matplotlib.pyplot as plt
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+temperature = [22, 24, 21, 23, 25, 26, 24]
+plt.scatter(days, temperature, color='red', s=100)  # s is the size of dots
+plt.title("Temperature Throughout the Week")
+plt.xlabel("Days")
+plt.ylabel("Temperature (°C)")
+plt.show()
+
+Question no 3: write a program to plot a pie chart showing a user's screen time across different activities:
+program:
+import matplotlib.pyplot as plt
+activities = ["Social Media", "Studying", "Watching Videos", "Gaming", "Others"]
+screen_time = [3, 4, 2, 1, 2]
+plt.pie(screen_time, labels=activities, autopct='%1.1f%%', startangle=90, colors=['skyblue','lightgreen','orange','pink','yellow'])
+plt.title("User Screen Time Distribution")
+plt.show()
+
