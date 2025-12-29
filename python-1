@@ -1,0 +1,181 @@
+1️⃣ Introduction to python:
+print("Hello, Python!") 
+
+-> identation in python ( Python automatically detects indentation (blocks)):
+print("Hello, Python!")  # Simple print
+
+if True:
+    print("Python uses indentation instead of braces")
+
+2️⃣ variables and comments in python:
+name = "Adeeba"  # Variable (hashtag a comment)
+age = 20
+print("Name:", name, "Age:", age)
+
+3️⃣ Type casting:
+num_str = "100"
+num_int = int(num_str)  # string to int
+num_float = float(num_str)  # string to float
+
+print(num_int, type(num_int))
+print(num_float, type(num_float))
+
+4️⃣ Rules for writing variables
+## Camel Case
+studentName = "Ali"
+
+# Snake Case
+student_name = "Sara"
+
+# Pascal Case
+StudentName = "Ahmed"
+
+# Legal Variables
+x = 10
+_y = 20
+z2 = 30
+
+# Illegal Variables (will give error if uncommented)
+# 2x = 10
+# my-name = "Test"
+
+5️⃣ Python Statements
+x = 10
+y = 20
+if x < y:
+    print("x is less than y")
+else:
+    print("x is greater than or equal to y")
+
+6️⃣ Data Types in python
+🔹 1. Numeric Types
+a) Integer (int)
+x = 10
+y = -5
+print("Integer:", x, "Type:", type(x))
+print("Integer:", y, "Type:", type(y))
+
+b) Float (float)
+a = 10.5
+b = -3.14
+print("Float:", a, "Type:", type(a))
+print("Float:", b, "Type:", type(b))
+
+c) Complex (complex)
+c1 = 2 + 3j
+c2 = complex(5, -1)
+print("Complex:", c1, "Type:", type(c1))
+print("Complex:", c2, "Type:", type(c2))
+
+🔹 2. Sequence Types
+a) String (str)
+name = "Adeeba"
+print("String:", name, "Type:", type(name))
+
+# Multi-line string
+text = """This is
+a multi-line
+string"""
+print(text)
+
+b) List (list)
+fruits = ["apple", "banana", "cherry"]
+numbers = [1, 2, 3, 4, 5]
+print("List of fruits:", fruits, "Type:", type(fruits))
+print("List of numbers:", numbers)
+
+c) Tuple (tuple)
+coords = (10, 20)
+colors = ("red", "green", "blue")
+print("Tuple:", coords, "Type:", type(coords))
+print("Tuple:", colors)
+
+d) Range (range)
+r = range(0, 5)  # 0 to 4
+for i in r:
+    print(i, end=" ")
+print("\nType:", type(r))
+
+🔹 3. Set Types
+a) Set (set)
+my_set = {1, 2, 3, 4, 4, 2}  # duplicates removed
+print("Set:", my_set, "Type:", type(my_set))
+
+b) Frozen Set (frozenset)
+fset = frozenset([1, 2, 3, 3])
+print("Frozen Set:", fset, "Type:", type(fset))
+
+🔹 4. Mapping Type
+a) Dictionary (dict)
+person = {"name": "Adeeba", "age": 20, "city": "Karachi"}
+print("Dictionary:", person, "Type:", type(person))
+
+# Access values
+print("Name:", person["name"])
+print("Age:", person.get("age"))
+
+🔹 5. Boolean Type (bool)
+a = True
+b = False
+print("Boolean a:", a, "Type:", type(a))
+print("Boolean b:", b, "Type:", type(b))
+
+🔹 6. None Type
+x = None
+print("NoneType:", x, "Type:", type(x))
+
+7️⃣ Global vs Local Variables
+x = 10  # Global variable
+
+def demo():
+    x = 5  # Local variable
+    print("Inside function:", x)
+
+demo()
+print("Outside function:", x)
+
+8️⃣ Strings
+🔹 Strings
+str1 = "Hello"
+str2 = "World"
+
+🔹 Concatenation
+greeting = str1 + " " + str2
+print(greeting)
+
+🔹 Modifying Strings
+text = "hello world"
+print(text.upper())   # HELLO WORLD
+print(text.lower())  # Hello world
+print(text.replace("world", "Python"))  # hello Python
+
+🔹 String Methods
+-> keyword in , not in , using in and not in keyword in if statement
+text = "Python123"
+# Check if a substring exists
+if "Python" in text:
+    print("'Python' is present in text")
+else:
+    print("'Python' is NOT present in text")
+#using in keyword in if statement:
+if "Python" in text:
+    print('Python' is present in text")
+
+# Check if a substring does NOT exist
+if "Java" not in text:
+    print("'Java' is NOT present in text")
+else:
+    print("'Java' is present in text")
+
+9️⃣ Operators in python
+# Arithmetic
+print(5 + 3, 5 - 3, 5 * 3, 5 / 3, 5 % 3, 5 ** 3)
+
+# Comparison
+print(5 > 3, 5 == 3, 5 != 3)
+
+# Logical
+print(True and False, True or False, not True)
+
+
+
